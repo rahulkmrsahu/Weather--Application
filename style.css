@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.app-main {
+    height: 320px;
+    width: 100%;
+    text-align: center;
+    background: black;
+
+
+}
+
+.searchInputBox {
+    height: 160px;
+
+
+}
+
+
+#input-box {
+    height: 40px;
+    width: 40%;
+    margin-top: 100px;
+
+}
+
+.weather-body {
+    height: 100vh;
+    width: 100%;
+    background: aqua;
+    font-weight: 600;
+    font-size: 64px;
+}
