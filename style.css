@@ -4,11 +4,31 @@
     box-sizing: border-box;
 }
 
+body {
+    background-image: url('images/sunny.jpg');
+    height: 100vh;
+    overflow: hidden;
+    background-repeat: no-repeat;
+
+}
+
+.heading {
+    height: 64px;
+    background-color: azure;
+    width: 100%;
+    font-size: 32px;
+    font-weight: 400;
+    letter-spacing: 5px;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
 .app-main {
     height: 320px;
     width: 100%;
     text-align: center;
-    background: black;
+
 
 
 }
@@ -21,16 +41,18 @@
 
 
 #input-box {
-    height: 40px;
+    height: 60px;
     width: 40%;
-    margin-top: 100px;
+    margin-top: 60px;
+    font-size: 32px;
+    border-radius: 10px;
 
 }
 
 .weather-body {
     height: 100vh;
     width: 100%;
-    background: aqua;
+
     font-weight: 600;
     font-size: 64px;
 }
