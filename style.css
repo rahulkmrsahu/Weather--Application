@@ -4,13 +4,6 @@
     box-sizing: border-box;
 }
 
-body {
-    background-image: url('images/sunny.jpg');
-    height: 100vh;
-    overflow: hidden;
-    background-repeat: no-repeat;
-
-}
 
 .heading {
     height: 64px;

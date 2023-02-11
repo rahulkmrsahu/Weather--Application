@@ -9,6 +9,8 @@ const weatherApi = {
 }
 
 
+//Event listner Function on keyPress
+
 const searchInputBox = document.getElementById('input-box')
 
 searchInputBox.addEventListener("keypress", (event) => {
@@ -24,7 +26,6 @@ searchInputBox.addEventListener("keypress", (event) => {
 })
 
 
-//Event listner Function on keyPress
 
 //Get Weather Report
 
@@ -46,10 +47,10 @@ function showWeatherReport(weather) {
     city.innerText = `${weather.name},${weather.sys.country}`
 
     let temperature = document.getElementById("temp")
-    temperature.innerHTML = `${Math.round(weather.main.temp)}&deg;C`
+    temperature.innerHTML = `${Math.round(weather.main.temp - 273.15)}&deg;C`
 
     let minMaxTemp = document.getElementById('min-max')
-    minMaxTemp.innerHTML = `${Math.floor(weather.main.temp_min)}&deg;C (min)/ ${Math.ceil(weather.main.temp_max)}&deg;C (max)`
+    minMaxTemp.innerHTML = `${Math.floor(weather.main.temp_min - 273.15)}&deg;C (min)/ ${Math.ceil(weather.main.temp_max - 273.15)}&deg;C (max)`
 
 
     let weatherType = document.getElementById('weather')
